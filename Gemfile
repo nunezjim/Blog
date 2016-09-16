@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
+gem 'bcrypt', '~> 3.1.7'
 gem 'record_tag_helper', '~> 1.0'
 
 group :development, :test do

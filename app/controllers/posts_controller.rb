@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
  def show
    @post = Post.where(id: params[:id]).first
- end 
+ end
 
   def create
     @post = Post.new(post_params)
@@ -39,6 +39,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :tag_ids => [])
   end
 end

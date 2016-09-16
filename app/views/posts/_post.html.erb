@@ -6,5 +6,9 @@
     <%= link_to "Delete", post, method: :delete %>
   </p>
   <p>Comments(<%= post.comments.count %>)</p>
+  <ul><% post.tags.each do |tag| %>
+    <li><%= tag.name %></li>
+    <% end %>
+  </ul>
 </div>
 <% end %>
