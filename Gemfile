@@ -12,7 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'  #This is for password authentication
 gem 'record_tag_helper', '~> 1.0'
 
 group :development, :test do
@@ -24,6 +24,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
