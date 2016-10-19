@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Writedully</title>
+    <title>Jimmy's Blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,9 +9,14 @@
   </head>
 
   <body>
-    <!--this is center the content  -->
+    <%= render 'navbar' %>
     <div id='main' class='container'>
-       <%= yield %>
+      <% if current_user %>
+
+       <% else %>
+
+      <% end %>
+      <%= yield %>
      </div>
   </body>
 </html>
