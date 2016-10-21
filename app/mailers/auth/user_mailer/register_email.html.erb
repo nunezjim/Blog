@@ -1,0 +1,4 @@
+<h1>Welcome to our site!<h1>
+<p>Enjoy your stay!</p>
+
+<%= link_to "Click to Confirm", new_auth_confirmation_url(token: @user.confirmation_token)  %>

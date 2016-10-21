@@ -1,0 +1,7 @@
+<h1>Welcome to Jimmy's Blog!<h1>
+
+<p>"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
+- Martin Golding"
+</p>
+
+<%= link_to "Click to Confirm", new_auth_confirmation_url(token: @user.confirmation_token) %>
