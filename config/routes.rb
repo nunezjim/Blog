@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
   resource :session, only: [:create]
   resource :confirmation, only: [:new]
-end
+  end
+
+  namespace :admin do
+    resources :posts
+
+    root to: "posts#index"
+  end
 
   get 'login' => 'auth/sessions#new'
   delete 'logout' => 'auth/sessions#destroy'
@@ -15,4 +21,5 @@ end
    end
 
    root to: 'posts#index'
-  end
+
+end
