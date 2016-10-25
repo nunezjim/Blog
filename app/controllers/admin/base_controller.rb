@@ -2,6 +2,8 @@ class Admin::BaseController < ApplicationController
   before_filter :ensure_admin_user!
 
   def ensure_admin_user!
-    current_user and current_user.admin?
+    unless current_user and current_user.admin?
+      redirect_to root_path, danger: "You don't belong there."
+    end
   end
 end

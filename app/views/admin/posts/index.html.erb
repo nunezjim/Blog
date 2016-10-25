@@ -1,3 +1,5 @@
 <% @posts.each do |post| %>
-  <%= post.title %>
+  <%= render post %>
 <% end %>
+
+<%= paginate @posts %>
